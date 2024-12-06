@@ -1,0 +1,34 @@
+/* Image styles */
+.imagemain {
+  width: 100%; /* L'image prend 100% de la largeur de la fenêtre */
+  position: relative;
+  height: auto; /* La hauteur est ajustée automatiquement pour garder les proportions */
+  display: block; /* Supprime les espaces indésirables en dessous de l'image */
+  padding: 0; /* Supprime les padding par défaut */
+  object-fit: cover; /* Couvre toute la largeur sans déformer l'image (si besoin) */
+  max-width: 100%; /* S'assure que l'image ne dépasse pas 100% de la largeur */
+}
+
+#image-container {
+  margin-left: 39%;
+  margin-right: 18%;
+  padding: 20px 10px;
+}
+
+.imagelarge {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  #image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 10px;
+  }
+}

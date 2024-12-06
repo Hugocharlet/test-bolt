@@ -1,0 +1,58 @@
+/* Icon styles */
+.sousmenu-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 10px;
+}
+
+.icon-container {
+  align-items: center;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+}
+
+.icon-link:hover + .texte-icon {
+  display: block;
+}
+
+.icon-item {
+  width: 30px;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.icon-link:hover .icon-item {
+  filter: brightness(0);
+}
+
+.texte-icon {
+  margin-top: 10px;
+  position: absolute;
+  display: none;
+  padding: 5px 8px;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .sousmenu-wrapper {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .texte-icon {
+    display: block;
+    position: relative;
+    background-color: white;
+  }
+
+  .icon-container {
+    display: flex;
+  }
+}

@@ -1,0 +1,6 @@
+/* Main stylesheet that imports all modules */
+@import './base.css';
+@import './images.css';
+@import './icons.css';
+@import './model-viewer.css';
+@import './loader.css';
